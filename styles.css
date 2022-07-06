@@ -11,21 +11,67 @@
 }
 .joji
 {
-    background-color: #524299;
-    width: 100%;
-    height: 50px;
+    background-color:#524299;
+    width: 100vw;
+    height: auto;
+    
+}
+.albums
+{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 250px;
+    z-index: 1;
+    justify-content: space-around;
+
+}
+.balads
+{
+    background-color: #4f2fdf;
+    width: 40vw;
+    height: 250px;
+}
+.balads::after
+{
+    clip-path: polygon(0 0, 65% 0, 40% 100%, 0% 100%);
+    color: #ad9fe9;
 }
 .pinkguy
 {
     background-color: #ff85b6;
-    width: 100%;
-    height: 50px;
+    width: 100vw;
+    height: auto;
+}
+.joji img,
+.pinkguy img
+{
+    width: 100vw;
+    height: auto;
+    opacity: 0.3;
+    z-index: -2;
 }
 
+.albums img
+{
+    width: 150px;
+    height: 150px;
+    padding-right: 15px;
+    
+}
 button
 {
     background-color: #725adb;
+    border-radius: 5px;
     color: aliceblue;
-    border-radius: 50%;
     border: 2px solid #3b266c;
 }
+
+button:hover
+{
+    box-shadow: 5px 5px 5px #3b266c;
+    transition: 250ms;
+    transform: translate(-3px, -2px);
+}
+
+
